@@ -1,46 +1,7 @@
-// import React, { Component } from 'react';
-// import { Searchbar } from './Searchbar/Searchbar';
-// // import * as API from './services/api';
-// import { fetchImages } from './services/api';
-// import { ImageGallery } from './ImageGallery/ImageGallery';
-
-// export class App extends Component {
-
-//   state = {
-//     fetchImages,
-//     images: [],
-    
-//   };
-
-//   //  handleSubmit = fetchImages => {
-//   //     this.setState({
-//   //     fetchImages,
-//   //     images: [],
-//   //     page: 1,
-//   //     loadMore: false,
-//   //   });
-//   // };
-
-//   render() {
-    
-//     return (
-//       <div
-//         // style={{
-//         //   display: 'grid',
-//         //   gridTemplateColumns: '1fr',
-//         //   gridGap: '16px',
-//         //   paddingBottom: '24px,'
-//         // }}
-//       >
-//         <Searchbar onSubmit={this.handleSubmit} />
-//         <ImageGallery images={this.state.images} />
-//       </div>
-//     );
-//   };
-// };
 import React, { Component } from 'react';
 
 import { fetchImages } from './services/api';
+
 import { Searchbar } from './Searchbar/Searchbar';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
@@ -55,10 +16,8 @@ export class App extends Component {
     per_page: 12,
     isLoading: false,
     loadMore: false,
-    // error: null,
     showModal: false,
     largeImageURL: '',
-    // id: null,
   };
 
   componentDidUpdate(_, prevState) {
