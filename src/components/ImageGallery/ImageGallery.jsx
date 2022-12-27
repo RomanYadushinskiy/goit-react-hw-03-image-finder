@@ -17,10 +17,6 @@ export const ImageGallery = ({ images, openModal }) => (
 );
 
 ImageGallery.propTypes = {
-  images: PropTypes.array,
-  id: PropTypes.number,
-  webformatURL: PropTypes.string,
-  tags: PropTypes.string,
-  largeImageURL: PropTypes.string,
-  openModal: PropTypes.func,
+  images: PropTypes.array.isRequired,
+  openModal: PropTypes.func.isRequired,
 };
